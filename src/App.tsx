@@ -1,4 +1,3 @@
-"use client";
 import React, { useMemo, useState, useEffect } from "react";
 import { Calculator, Info, Landmark, Banknote, Sun, Moon, Save, Upload, AlertTriangle, TrendingUp, Calendar } from "lucide-react";
 
@@ -113,21 +112,21 @@ export default function SellerFinanceCalculator() {
   };
 
   // ---------- State ----------
-  const [purchasePriceRaw, setPurchasePriceRaw] = useState("6,000,000");
-  const [downPaymentRaw, setDownPaymentRaw] = useState("200,000");
-  const [noiRaw, setNoiRaw] = useState("356,000");
+  const [purchasePriceRaw, setPurchasePriceRaw] = useState("1,000,000");
+  const [downPaymentRaw, setDownPaymentRaw] = useState("100,000");
+  const [noiRaw, setNoiRaw] = useState("100,000");
 
   const [useFirstLoan, setUseFirstLoan] = useState(true);
-  const [firstBalanceRaw, setFirstBalanceRaw] = useState("2,000,000");
-  const [firstRate, setFirstRate] = useState("6.3");
-  const [firstAmortYears, setFirstAmortYears] = useState(25);
+  const [firstBalanceRaw, setFirstBalanceRaw] = useState("500,000");
+  const [firstRate, setFirstRate] = useState("6");
+  const [firstAmortYears, setFirstAmortYears] = useState(20);
   const [firstBalloonYears, setFirstBalloonYears] = useState(10);
-  const [useFirstBalloon, setUseFirstBalloon] = useState(true);
+  const [useFirstBalloon, setUseFirstBalloon] = useState(false);
 
   const [sellerMode, setSellerMode] = useState("amortized");
-  const [sellerRate, setSellerRate] = useState("3");
+  const [sellerRate, setSellerRate] = useState("5");
   const [sellerAmortYears, setSellerAmortYears] = useState(30);
-  const [sellerBalloonYears, setSellerBalloonYears] = useState(8);
+  const [sellerBalloonYears, setSellerBalloonYears] = useState(10);
   const [useSellerBalloon, setUseSellerBalloon] = useState(true);
 
   // ---------- Saved Scenarios ----------
